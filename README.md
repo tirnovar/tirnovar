@@ -11,7 +11,7 @@
 - 🌐 (Blog) [Jak na Power BI (CZ)](https://www.jaknapowerbi.cz/)
 - ⛵️ Sailor, 🏹 Archer, 🏸 Badmintonist, ✈️ Traveler, 🎮 Gamer, 🤖 Geek
 - 🎧 Metal, Rock
-[![Supporting](https://img.shields.io/badge/Dax%20Studio-Supporting-green?style=flat-square&logo=GitHub%20Sponsors&logoColor=white)](https://github.com/DaxStudio)
+<br><br>[![Supporting](https://img.shields.io/badge/Dax%20Studio-Supporting-green?style=flat-square&logo=GitHub%20Sponsors&logoColor=white)](https://github.com/DaxStudio)
 
 ## GitHub stats
 [![Anurag’s github stats](https://github-readme-stats.vercel.app/api?username=tirnovar)](https://github.com/tirnovar)
