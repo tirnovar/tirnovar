@@ -9,7 +9,7 @@
 - ⌨️ #PowerBI REST API with #PowerQuery -> Open-source project is here: [Link to REPOSITORY](https://github.com/tirnovar/Power_BI_REST_API_PQ)
 - 💼 [DataBrothers](https://www.databrothers.cz/) as Managing partner & Lead technical consultant
 - 🏆 [Microsoft Most Valuable Profesional - Data Platform - Power BI](https://mvp.microsoft.com/en-us/PublicProfile/5003801?fullName=%C5%A0t%C4%9Bp%C3%A1n%20Re%C5%A1l)
-- 👽 [TOP SECRET PROJECT...](https://github.com/tirnovar/Power-BI-Admin-REST-API-Connector)
+- 💡 [Power BI REST API Connector for Admins](https://github.com/tirnovar/Power-BI-Admin-REST-API-Connector)
 - ⛵️ Sailor, 🏹 Archer, 🏸 Badmintonist, ✈️ Traveler, 🎮 Gamer, 🤖 Geek
 - 🎧 Metal, Rock
 <br><br>[![Supporting](https://img.shields.io/badge/Dax%20Studio-Supporting-green?style=flat-square&logo=GitHub%20Sponsors&logoColor=white)](https://github.com/DaxStudio)
