@@ -12,7 +12,7 @@
 - 💡 [Power BI REST API Connector for Admins](https://github.com/tirnovar/Power-BI-Admin-REST-API-Connector)
 - ⛵️ Sailor, 🏹 Archer, 🏸 Badmintonist, ✈️ Traveler, 🎮 Gamer, 🤖 Geek
 - 🎧 Metal, Rock
-<br><br>[![Supporting](https://img.shields.io/badge/Dax%20Studio-Supporting-green?style=flat-square&logo=GitHub%20Sponsors&logoColor=white)](https://github.com/DaxStudio)
+<br><br>[![Supporting](https://img.shields.io/badge/Dax%20Studio-Supporting-green?style=flat-square&logo=GitHub%20Sponsors&logoColor=white)](https://github.com/DaxStudio) [![Supporting](https://img.shields.io/badge/PBITOOLS-Supporting-green?style=flat-square&logo=GitHub%20Sponsors&logoColor=white)](https://github.com/pbi-tools)
 
 ## GitHub stats
 [![Anurag’s github stats](https://github-readme-stats.vercel.app/api?username=tirnovar)](https://github.com/tirnovar)
