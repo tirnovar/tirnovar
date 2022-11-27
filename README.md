@@ -14,5 +14,10 @@
 - 🎧 Metal, Rock
 <br><br>[![Supporting](https://img.shields.io/badge/Dax%20Studio-Supporting-green?style=flat-square&logo=GitHub%20Sponsors&logoColor=white)](https://github.com/DaxStudio) [![Supporting](https://img.shields.io/badge/PBITOOLS-Supporting-green?style=flat-square&logo=GitHub%20Sponsors&logoColor=white)](https://github.com/pbi-tools)
 
+## Prefered Languages
+- DAX
+- M
+- Python
+
 ## GitHub stats
 [![Anurag’s github stats](https://github-readme-stats.vercel.app/api?username=tirnovar)](https://github.com/tirnovar)
