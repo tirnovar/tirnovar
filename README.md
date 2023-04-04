@@ -5,7 +5,7 @@
 - 🧑🏻 [Štěpán Rešl](https://www.linkedin.com/in/%C5%A1t%C4%9Bp%C3%A1n-re%C5%A1l-464084152/) (Tirnovar) 🇨🇿
 - 💬 (Moto) Don't say something cannot be done, or someone who doesn't know will come and do it.
 - 🌐 Blog [Data Meerkat](https://datameerkat.com/)
-- 🧐 Passion for Data, #PowerQuery, Design, UX, Cooking, RedDwarf, SGC, Marvel
+- 🧐 Passion for #Data, #PowerBI, #PowerQuery, #Design, #UX
 - 💻 My main repository is [m-custom-functions](https://github.com/tirnovar/m-custom-functions)
 - ⌨️ #PowerBI REST API with #PowerQuery -> Open-source project is here: [Link to REPOSITORY](https://github.com/tirnovar/Power_BI_REST_API_PQ)
 - 💼 [DataBrothers](https://www.databrothers.cz/) as Managing partner & Lead technical consultant
