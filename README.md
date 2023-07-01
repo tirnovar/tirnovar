@@ -13,7 +13,6 @@
 - 💡 [Power BI REST API Connector for Admins](https://github.com/tirnovar/Power-BI-Admin-REST-API-Connector)
 - ⛵️ Sailor, 🏹 Archer, 🏸 Badmintonist, ✈️ Traveler, 🎮 Gamer, 🤖 Geek
 - 🎧 Metal, Rock
-<br><br>[![Supporting](https://img.shields.io/badge/Dax%20Studio-Supporting-green?style=flat-square&logo=GitHub%20Sponsors&logoColor=white)](https://github.com/DaxStudio) [![Supporting](https://img.shields.io/badge/PBITOOLS-Supporting-green?style=flat-square&logo=GitHub%20Sponsors&logoColor=white)](https://github.com/pbi-tools)
 
 ![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 
