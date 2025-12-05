@@ -22,5 +22,5 @@
 <br> + DAX, M
 
 ## My GitHub Stats:
-<img alt="Tirnovar's GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=tirnovar&theme=dracula&hide_border=true" width='48%' /> ![Tirnovar's GitHub stats](https://github-readme-stats.vercel.app/api?username=tirnovar&theme=dracula&hide_border=true\&rank_icon=github)
+<img alt="Tirnovar's GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=tirnovar&theme=dracula&hide_border=true" width='48%' />
 <br>
