@@ -20,7 +20,3 @@
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white) 
 ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) 
 <br> + DAX, M
-
-## My GitHub Stats:
-<img alt="Tirnovar's GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=tirnovar&theme=dracula&hide_border=true" width='48%' />
-<br>
