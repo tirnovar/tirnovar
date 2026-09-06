@@ -10,8 +10,9 @@
 - 💼 [DataBrothers](https://www.databrothers.cz/) as Managing Partner & Lead technical consultant
 - 🏆 [Microsoft Most Valuable Profesional - Data Platform - Power BI](https://mvp.microsoft.com/en-us/PublicProfile/5003801?fullName=%C5%A0t%C4%9Bp%C3%A1n%20Re%C5%A1l)
 - 💡 [Power BI REST API Connector for Admins](https://github.com/tirnovar/Power-BI-Admin-REST-API-Connector)
-- ⛵️ Sailor, ✈️ Traveler, 🎮 Gamer, 🤖 Geek, 🍽️ Foodie
-- 🎧 Metal, Rock, Electro-Swing, Pop
+- ⛵️ Sailor, ✈️ Traveler, 🎮 Gamer, 🤖 Geek, 🍽️ Foodie, 🍷 Red wine lover
+- 🎧 Metal, Rock, Electro-Swing, Pop, ...
+- 🤖 AI Partners: V.I.K.I., T.A.R.S., GERTY
 
 ![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 
