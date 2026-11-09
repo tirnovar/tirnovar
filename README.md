@@ -21,13 +21,17 @@
 
 ### ✦ I · Dossier
 
-I make data platforms behave. Mostly **Microsoft Fabric**, **Power BI**, **Power Query** and **Python**, and SVG whenever a report needs to look like it means it.
+<p align="center">
+  <img src="assets/dossier.svg" width="100%" alt="I make data platforms behave. Mostly Microsoft Fabric, Power BI, Power Query and Python, and SVG whenever a report needs to look like it means it.">
+</p>
 
-- 🏆 [Microsoft MVP · Data Platform](https://mvp.microsoft.com/en-us/PublicProfile/5003801) (Power BI & Fabric)
-- 💼 Managing Partner & Lead Technical Consultant at [DataBrothers](https://www.databrothers.cz/)
-- 🌐 Writes the [Data Meerkat](https://datameerkat.com/) blog
-- 🛰️ Co-organizer of the [Czech Fabric User Group](https://community.fabric.microsoft.com/group/CzechFabricUserGroup)
-- 📗 Co-author of [Exam Ref DP-600: Implementing Analytics Solutions Using Microsoft Fabric](https://www.amazon.com/dp/0135336023)
+<p align="center">
+  <a href="https://mvp.microsoft.com/en-us/PublicProfile/5003801"><img src="assets/dossier/mvp.svg" width="19%" alt="Microsoft MVP, Data Platform (Power BI and Fabric)"></a>
+  <a href="https://www.databrothers.cz/"><img src="assets/dossier/databrothers.svg" width="19%" alt="Managing Partner and Lead Technical Consultant at DataBrothers"></a>
+  <a href="https://datameerkat.com/"><img src="assets/dossier/datameerkat.svg" width="19%" alt="Data Meerkat blog"></a>
+  <a href="https://community.fabric.microsoft.com/group/CzechFabricUserGroup"><img src="assets/dossier/user-group.svg" width="19%" alt="Co-organizer of the Czech Fabric User Group"></a>
+  <a href="https://www.amazon.com/dp/0135336023"><img src="assets/dossier/dp-600.svg" width="19%" alt="Co-author of Exam Ref DP-600: Implementing Analytics Solutions Using Microsoft Fabric"></a>
+</p>
 
 <img src="assets/divider.svg" width="100%" alt="">
 
@@ -83,12 +87,9 @@ Full abstracts on [Sessionize](https://sessionize.com/stepan-resl).
 
 ### ✦ VI · Off-duty log
 
-```text
-> crew.dossier --off-duty
-  ⛵ sailor   ✈️ traveler   🎮 gamer   🤖 geek   🍽️ foodie   🍷 red wine lover
-  🎧 metal · rock · electro-swing · pop · ...
-  🛰️ AI crew: V.I.K.I. · T.A.R.S. · GERTY
-```
+<p align="center">
+  <img src="assets/off-duty.svg" width="100%" alt="Off-duty: sailor, traveler, gamer, geek, foodie, red wine lover. Music: metal, rock, electro-swing, pop. AI crew on watch: V.I.K.I., T.A.R.S., GERTY.">
+</p>
 
 <p align="center">
   <img src="assets/footer.svg" width="100%" alt="End of transmission. Per data ad astra.">

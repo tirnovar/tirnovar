@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="210" viewBox="0 0 900 210" role="img" aria-label="Off-duty: sailor, traveler, gamer, geek, foodie, red wine lover; music: metal, rock, electro-swing, pop">
+<title>Off-duty: sailor, traveler, gamer, geek, foodie, red wine lover; music: metal, rock, electro-swing, pop</title>
+<defs><style>
+.serif{font-family:Cinzel, 'Cormorant Garamond', 'Trajan Pro', Georgia, 'Times New Roman', serif}
+.mono{font-family:'JetBrains Mono', 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
+@keyframes twinkle{0%,100%{opacity:.12}50%{opacity:.95}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes spinr{to{transform:rotate(-360deg)}}
+@keyframes fadeup{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.tw{animation:twinkle 5s ease-in-out infinite}
+.blink{animation:blink 1.1s steps(1) infinite}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+
+@keyframes rock{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+@keyframes slosh{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+@keyframes blinkeye{0%,92%{opacity:1}93%,97%{opacity:0}98%,100%{opacity:1}}
+@keyframes eq{0%,100%{transform:scaleY(.15)}50%{transform:scaleY(1)}}
+.eq{transform-box:fill-box;transform-origin:bottom;animation:eq 1s ease-in-out infinite}
+@keyframes lbl{0%,100%{opacity:.7}50%{opacity:1}}
+.lbl{animation:lbl 5s ease-in-out infinite}
+</style><radialGradient id="bg" cx="20%" cy="50%" r="90%"><stop offset="0" stop-color="#1B1440"/><stop offset=".45" stop-color="#0E0B24"/><stop offset="1" stop-color="#07061A"/></radialGradient><filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><linearGradient id="eq" x1="0" y1="1" x2="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#9B7BFF"/><stop offset="1" stop-color="#5FE3D0"/></linearGradient></defs>
+<rect x=".5" y=".5" width="899" height="209" rx="16" fill="url(#bg)" stroke="#3B3568"/>
+<circle cx="716.81" cy="69.83" r="0.6" fill="#ECE6FF" opacity="0.16"/>
+<circle cx="428.8" cy="116.69" r="1.2" fill="#ECE6FF" class="tw" style="animation-delay:-4.41s;animation-duration:5.5s"/>
+<circle cx="763.2" cy="9.73" r="1.0" fill="#ECE6FF" opacity="0.19"/>
+<circle cx="893.97" cy="82.49" r="0.8" fill="#ECE6FF" class="tw" style="animation-delay:-3.86s;animation-duration:4.3s"/>
+<circle cx="422.94" cy="49.57" r="0.5" fill="#ECE6FF" opacity="0.38"/>
+<circle cx="807.83" cy="124.25" r="1.2" fill="#ECE6FF" class="tw" style="animation-delay:-5.61s;animation-duration:6.54s"/>
+<circle cx="193.14" cy="70.43" r="0.5" fill="#ECE6FF" opacity="0.43"/>
+<circle cx="821.84" cy="162.41" r="0.5" fill="#ECE6FF" class="tw" style="animation-delay:-5.44s;animation-duration:5.76s"/>
+<circle cx="112.36" cy="193.24" r="0.5" fill="#E8C66A" opacity="0.48"/>
+<circle cx="477.62" cy="48.27" r="1.0" fill="#E8C66A" opacity="0.41"/>
+<circle cx="346.82" cy="195.34" r="0.5" fill="#ECE6FF" opacity="0.13"/>
+<circle cx="323.38" cy="203.84" r="0.5" fill="#ECE6FF" opacity="0.46"/>
+<circle cx="617.94" cy="15.3" r="1.0" fill="#5FE3D0" opacity="0.18"/>
+<circle cx="477.81" cy="7.47" r="1.0" fill="#ECE6FF" opacity="0.41"/>
+<circle cx="517.42" cy="16.56" r="1.0" fill="#ECE6FF" opacity="0.41"/>
+<circle cx="27.84" cy="5.66" r="0.5" fill="#5FE3D0" opacity="0.16"/>
+<circle cx="352.11" cy="100.13" r="0.6" fill="#ECE6FF" class="tw" style="animation-delay:-5.4s;animation-duration:3.43s"/>
+<circle cx="150.51" cy="9.07" r="0.6" fill="#5FE3D0" opacity="0.26"/>
+<circle cx="879.54" cy="147.83" r="1.2" fill="#E8C66A" opacity="0.22"/>
+<circle cx="752.57" cy="24.82" r="1.2" fill="#E8C66A" class="tw" style="animation-delay:-1.93s;animation-duration:5.27s"/>
+<circle cx="172.69" cy="123.55" r="0.5" fill="#ECE6FF" class="tw" style="animation-delay:-0.99s;animation-duration:3.45s"/>
+<circle cx="787.39" cy="107.1" r="1.6" fill="#ECE6FF" opacity="0.18"/>
+<circle cx="852.6" cy="81.63" r="1.0" fill="#E8C66A" opacity="0.43"/>
+<circle cx="362.81" cy="181.21" r="1.6" fill="#E8C66A" opacity="0.23"/>
+<circle cx="806.18" cy="21.4" r="1.2" fill="#ECE6FF" class="tw" style="animation-delay:-1.36s;animation-duration:4.41s"/>
+<circle cx="332.41" cy="150.37" r="1.6" fill="#E8C66A" opacity="0.41"/>
+<circle cx="588.68" cy="83.56" r="1.2" fill="#E8C66A" opacity="0.22"/>
+<circle cx="869.62" cy="180.83" r="1.6" fill="#5FE3D0" class="tw" style="animation-delay:-0.55s;animation-duration:6.38s"/>
+<circle cx="133.37" cy="76.63" r="1.6" fill="#ECE6FF" class="tw" style="animation-delay:-5.77s;animation-duration:6.12s"/>
+<circle cx="543.77" cy="121.11" r="1.2" fill="#ECE6FF" opacity="0.49"/>
+<circle cx="110.95" cy="143.74" r="0.6" fill="#ECE6FF" opacity="0.37"/>
+<circle cx="309.99" cy="140.94" r="1.6" fill="#9B7BFF" opacity="0.26"/>
+<circle cx="788.73" cy="64.69" r="0.8" fill="#E8C66A" opacity="0.4"/>
+<circle cx="8.54" cy="94.87" r="0.6" fill="#E8C66A" class="tw" style="animation-delay:-6.87s;animation-duration:7.25s"/>
+<circle cx="72.4" cy="4.93" r="0.5" fill="#E8C66A" opacity="0.13"/>
+<circle cx="704.16" cy="167.09" r="1.2" fill="#ECE6FF" opacity="0.43"/>
+<circle cx="488.23" cy="139.03" r="0.5" fill="#ECE6FF" opacity="0.5"/>
+<circle cx="350.21" cy="148.38" r="0.6" fill="#5FE3D0" opacity="0.33"/>
+<circle cx="690.34" cy="69.14" r="1.0" fill="#ECE6FF" class="tw" style="animation-delay:-4.04s;animation-duration:7.7s"/>
+<circle cx="348.89" cy="137.18" r="1.2" fill="#ECE6FF" class="tw" style="animation-delay:-0.67s;animation-duration:6.93s"/>
+<circle cx="589.18" cy="134.75" r="1.6" fill="#5FE3D0" class="tw" style="animation-delay:-6.75s;animation-duration:5.15s"/>
+<circle cx="452.78" cy="75.37" r="1.6" fill="#ECE6FF" class="tw" style="animation-delay:-5.58s;animation-duration:7.69s"/>
+<circle cx="311.5" cy="33.4" r="0.8" fill="#9B7BFF" opacity="0.23"/>
+<circle cx="443.41" cy="144.59" r="0.5" fill="#E8C66A" opacity="0.15"/>
+<circle cx="262.03" cy="198.9" r="0.8" fill="#9B7BFF" class="tw" style="animation-delay:-3.65s;animation-duration:6.08s"/>
+<path d="M10 26V10H26" fill="none" stroke="#5FE3D0" stroke-width="1.4" opacity=".55"/><path d="M874 10H890V26" fill="none" stroke="#5FE3D0" stroke-width="1.4" opacity=".55"/><path d="M10 184V200H26" fill="none" stroke="#5FE3D0" stroke-width="1.4" opacity=".55"/><path d="M874 200H890V184" fill="none" stroke="#5FE3D0" stroke-width="1.4" opacity=".55"/>
+<text x="34" y="34" class="mono" font-size="11" letter-spacing="1.5" fill="#5FE3D0">&gt; crew.dossier --off-duty</text><text x="866" y="34" text-anchor="end" class="mono" font-size="9.5" letter-spacing="1.5" fill="#5E579A">STATUS: SHORE LEAVE · COMMS OPEN</text>
+<g style="transform-origin:82px 104px;animation:spin 24s linear infinite"><circle cx="82" cy="104" r="36" fill="none" stroke="#5FE3D0" stroke-width=".9" stroke-dasharray="2 5" opacity=".6"/></g><circle cx="82" cy="104" r="30" fill="#15112F" stroke="#A8822F" stroke-width="1.2"/><g transform="translate(82 104)" fill="none" stroke="#E8C66A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><g style="animation:rock 4s ease-in-out infinite;transform-origin:0px 12px"><path d="M-16 6H16L11 13H-11Z" fill="#E8C66A" fill-opacity=".25"/><line x1="0" y1="6" x2="0" y2="-18"/><path d="M2 -16V3H15Z" fill="#E8C66A" fill-opacity=".85"/><path d="M-2 -11V3H-12Z"/></g><path d="M-18 17q4.5 -3 9 0t9 0t9 0t9 0" stroke="#5FE3D0" stroke-width="1.2" opacity=".8"/></g><text class="mono lbl" x="82" y="160" text-anchor="middle" font-size="9.5" letter-spacing="1.8" fill="#ECE6FF" style="animation-delay:0.0s">SAILOR</text>
+<g style="transform-origin:172px 104px;animation:spinr 27s linear infinite"><circle cx="172" cy="104" r="36" fill="none" stroke="#5FE3D0" stroke-width=".9" stroke-dasharray="2 5" opacity=".6"/></g><circle cx="172" cy="104" r="30" fill="#15112F" stroke="#A8822F" stroke-width="1.2"/><g transform="translate(172 104)" fill="none" stroke="#E8C66A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><g style="animation:float 3.2s ease-in-out infinite"><path d="M0 -18C2 -18 3 -15 3 -12V-3L17 5V8L3 4V11L8 15V17L0 15L-8 17V15L-3 11V4L-17 8V5L-3 -3V-12C-3 -15 -2 -18 0 -18Z" fill="#E8C66A" fill-opacity=".2"/></g></g><text class="mono lbl" x="172" y="160" text-anchor="middle" font-size="9.5" letter-spacing="1.8" fill="#ECE6FF" style="animation-delay:0.6s">TRAVELER</text>
+<g style="transform-origin:262px 104px;animation:spin 30s linear infinite"><circle cx="262" cy="104" r="36" fill="none" stroke="#5FE3D0" stroke-width=".9" stroke-dasharray="2 5" opacity=".6"/></g><circle cx="262" cy="104" r="30" fill="#15112F" stroke="#A8822F" stroke-width="1.2"/><g transform="translate(262 104)" fill="none" stroke="#E8C66A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M-13 -7H13C18 -7 21 -1 20 6C19 12 15 14 12 10L8 5H-8L-12 10C-15 14 -19 12 -20 6C-21 -1 -18 -7 -13 -7Z" fill="#E8C66A" fill-opacity=".15"/><path d="M-11 -4V4M-15 0H-7" stroke-width="2"/><circle cx="9" cy="-2" r="1.9" fill="#5FE3D0" stroke="none" class="blink"/><circle cx="13" cy="2" r="1.9" fill="#E8C66A" stroke="none"/></g><text class="mono lbl" x="262" y="160" text-anchor="middle" font-size="9.5" letter-spacing="1.8" fill="#ECE6FF" style="animation-delay:1.2s">GAMER</text>
+<g style="transform-origin:352px 104px;animation:spinr 33s linear infinite"><circle cx="352" cy="104" r="36" fill="none" stroke="#5FE3D0" stroke-width=".9" stroke-dasharray="2 5" opacity=".6"/></g><circle cx="352" cy="104" r="30" fill="#15112F" stroke="#A8822F" stroke-width="1.2"/><g transform="translate(352 104)" fill="none" stroke="#E8C66A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="0" y1="-10" x2="0" y2="-16"/><circle cx="0" cy="-17.5" r="2" fill="#5FE3D0" stroke="none" style="animation:pulse 1.6s ease-in-out infinite"/><rect x="-13" y="-10" width="26" height="21" rx="5" fill="#E8C66A" fill-opacity=".15"/><rect x="-17" y="-4" width="4" height="8" rx="1.5"/><rect x="13" y="-4" width="4" height="8" rx="1.5"/><g fill="#5FE3D0" stroke="none" style="animation:blinkeye 4s steps(1) infinite"><circle cx="-5" cy="-1" r="2.6"/><circle cx="5" cy="-1" r="2.6"/></g><path d="M-5 5.5H5" stroke-width="1.4"/></g><text class="mono lbl" x="352" y="160" text-anchor="middle" font-size="9.5" letter-spacing="1.8" fill="#ECE6FF" style="animation-delay:1.8s">GEEK</text>
+<g style="transform-origin:442px 104px;animation:spin 36s linear infinite"><circle cx="442" cy="104" r="36" fill="none" stroke="#5FE3D0" stroke-width=".9" stroke-dasharray="2 5" opacity=".6"/></g><circle cx="442" cy="104" r="30" fill="#15112F" stroke="#A8822F" stroke-width="1.2"/><g transform="translate(442 104)" fill="none" stroke="#E8C66A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle r="13" fill="#E8C66A" fill-opacity=".12"/><circle r="8.5" opacity=".6"/><path d="M-21 -12V-3M-23.5 -12V-5C-23.5 -2 -18.5 -2 -18.5 -5V-12M-21 -3V13"/><path d="M21 13V-12C24.5 -9 24.5 -1 21 1"/></g><text class="mono lbl" x="442" y="160" text-anchor="middle" font-size="9.5" letter-spacing="1.8" fill="#ECE6FF" style="animation-delay:2.4s">FOODIE</text>
+<g style="transform-origin:532px 104px;animation:spinr 39s linear infinite"><circle cx="532" cy="104" r="36" fill="none" stroke="#5FE3D0" stroke-width=".9" stroke-dasharray="2 5" opacity=".6"/></g><circle cx="532" cy="104" r="30" fill="#15112F" stroke="#A8822F" stroke-width="1.2"/><g transform="translate(532 104)" fill="none" stroke="#E8C66A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M-8.2 -9H8.2C7.4 -3 4.4 -.6 0 -.6C-4.4 -.6 -7.4 -3 -8.2 -9Z" fill="#B0283F" stroke="none" style="animation:slosh 3.4s ease-in-out infinite;transform-origin:0px -4px"/><path d="M-9 -17H9C9 -5 5 0 0 0C-5 0 -9 -5 -9 -17Z"/><line x1="0" y1="0" x2="0" y2="13"/><line x1="-7" y1="13.5" x2="7" y2="13.5"/></g><text class="mono lbl" x="532" y="160" text-anchor="middle" font-size="9.5" letter-spacing="1.8" fill="#ECE6FF" style="animation-delay:3.0s">RED WINE</text>
+<rect x="600" y="52" width="268" height="128" rx="10" fill="#15112F" fill-opacity=".75" stroke="#3B3568"/><text x="616" y="74" class="mono" font-size="10" letter-spacing="2.5" fill="#5FE3D0">AUDIO CHANNEL</text><circle cx="814" cy="70.5" r="3" fill="#FF5A6E" class="blink"/><text x="852" y="74" text-anchor="end" class="mono" font-size="9" letter-spacing="1.5" fill="#8E88B8">LIVE</text>
+<rect class="eq" x="616" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:1.08s;animation-delay:-1.04s"/>
+<rect class="eq" x="626" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:1.23s;animation-delay:-1.32s"/>
+<rect class="eq" x="636" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:1.18s;animation-delay:-1.29s"/>
+<rect class="eq" x="646" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:0.57s;animation-delay:-0.65s"/>
+<rect class="eq" x="656" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:1.35s;animation-delay:-0.91s"/>
+<rect class="eq" x="666" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:1.32s;animation-delay:-0.16s"/>
+<rect class="eq" x="676" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:0.95s;animation-delay:-0.35s"/>
+<rect class="eq" x="686" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:1.01s;animation-delay:-0.8s"/>
+<rect class="eq" x="696" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:0.56s;animation-delay:-0.3s"/>
+<rect class="eq" x="706" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:0.79s;animation-delay:-1.28s"/>
+<rect class="eq" x="716" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:1.2s;animation-delay:-0.22s"/>
+<rect class="eq" x="726" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:1.23s;animation-delay:-0.19s"/>
+<rect class="eq" x="736" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:1.07s;animation-delay:-0.18s"/>
+<rect class="eq" x="746" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:0.55s;animation-delay:-1.22s"/>
+<rect class="eq" x="756" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:0.73s;animation-delay:-0.3s"/>
+<rect class="eq" x="766" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:1.39s;animation-delay:-1.22s"/>
+<rect class="eq" x="776" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:0.8s;animation-delay:-1.35s"/>
+<rect class="eq" x="786" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:1.01s;animation-delay:-0.95s"/>
+<rect class="eq" x="796" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:0.72s;animation-delay:-1.32s"/>
+<rect class="eq" x="806" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:1.14s;animation-delay:-1.35s"/>
+<rect class="eq" x="816" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:1.31s;animation-delay:-0.42s"/>
+<rect class="eq" x="826" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:0.86s;animation-delay:-0.23s"/>
+<rect class="eq" x="836" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:0.67s;animation-delay:-0.09s"/>
+<rect class="eq" x="846" y="92" width="6" height="52" rx="1.5" fill="url(#eq)" style="animation-duration:0.81s;animation-delay:-0.84s"/>
+<line x1="616" y1="146" x2="852" y2="146" stroke="#3B3568"/><text x="734.0" y="166" text-anchor="middle" class="mono" font-size="10" fill="#ECE6FF">METAL · ROCK · ELECTRO-SWING · POP · …</text>
+<text x="34" y="194" class="mono" font-size="9.5" letter-spacing="1" fill="#5E579A">AI CREW ON WATCH ▸ V.I.K.I. · T.A.R.S. · GERTY</text>
+</svg>

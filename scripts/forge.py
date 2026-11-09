@@ -123,6 +123,32 @@ MISSIONS = [
      "amazon.com/dp/0135336023"),
 ]
 
+# Off-duty dossier: (label, icon) and the audio channel
+OFF_DUTY = [
+    ("SAILOR", "sail"),
+    ("TRAVELER", "plane"),
+    ("GAMER", "gamepad"),
+    ("GEEK", "robot"),
+    ("FOODIE", "plate"),
+    ("RED WINE", "wine"),
+]
+GENRES = "METAL · ROCK · ELECTRO-SWING · POP · …"
+
+# Dossier: intro banner and credential tiles (file slug, role, title, icon)
+DOSSIER_INTRO = (
+    "I make data platforms behave.",
+    "Mostly Microsoft Fabric · Power BI · Power Query · Python,",
+    "and SVG whenever a report needs to look like it means it.",
+)
+CREDENTIALS = [
+    ("mvp", "MICROSOFT MVP", "Data Platform", "medal"),
+    ("databrothers", "MANAGING PARTNER", "DataBrothers", "briefcase"),
+    ("datameerkat", "BLOG", "Data Meerkat", "quill"),
+    ("user-group", "CO-ORGANIZER", "Czech Fabric UG", "network"),
+    ("dp-600", "CO-AUTHOR", "Exam Ref DP-600", "book"),
+]
+AI_CREW = "V.I.K.I. · T.A.R.S. · GERTY"
+
 # (file slug, label, color key)
 COMMS = [
     ("linkedin", "LINKEDIN", "gold"),
@@ -890,6 +916,234 @@ def comm_button(label: str, color_key: str, idx: int) -> str:
     return svg(W, H, label, body, css)
 
 
+# ════════════════════════════════════════════════════════════════ DOSSIER ══
+
+def dossier_intro() -> str:
+    W, H = 900, 116
+    bg_defs, bg = backdrop(W, H, cx="50%", cy="0%")
+    defs = bg_defs + glow_filter("glow", 2)
+    headline, line1, line2 = DOSSIER_INTRO
+    css = """
+.hl{animation:fadeup 1s ease-out .2s both}
+.sub{animation:fadein 1.4s ease-out .9s both}
+"""
+    body = (
+        bg + starfield(W, H, 40, seed=9) + corners(W, H)
+        + f'<text class="serif hl" x="{W / 2}" y="50" text-anchor="middle" font-size="27" letter-spacing="2" '
+        f'fill="{C["gold"]}" filter="url(#glow)">{esc(headline)}</text>'
+        f'<text class="mono sub" x="{W / 2}" y="78" text-anchor="middle" font-size="12" fill="{C["ink"]}">'
+        f"{esc(line1)}</text>"
+        f'<text class="mono sub" x="{W / 2}" y="96" text-anchor="middle" font-size="12" fill="{C["dim"]}">'
+        f"{esc(line2)}</text>"
+    )
+    return svg(W, H, " ".join(DOSSIER_INTRO), body, css, defs)
+
+
+def cred_icon(kind: str) -> str:
+    g, c = C["gold"], C["cyan"]
+    if kind == "medal":
+        return (
+            f'<path d="M-5 2L-9 16L-4 13L-1 17M5 2L9 16L4 13L1 17" stroke="{c}"/>'
+            f'<circle cx="0" cy="-6" r="10" fill="{g}" fill-opacity=".18"/>'
+            f'<polygon points="{star_points(0, -6, 5, 6, 2.6)}" fill="{g}" stroke="none" '
+            f'style="animation:pulse 2.6s ease-in-out infinite"/>'
+        )
+    if kind == "briefcase":
+        return (
+            f'<path d="M-5 -7V-11H5V-7"/>'
+            f'<rect x="-15" y="-7" width="30" height="20" rx="3" fill="{g}" fill-opacity=".15"/>'
+            f'<path d="M-15 1H15"/><rect x="-3" y="-1" width="6" height="4" rx="1" fill="{c}" stroke="none"/>'
+        )
+    if kind == "quill":
+        return (
+            f'<path d="M13 -16C0 -14 -9 -3 -10 12C-2 9 9 0 13 -16Z" fill="{g}" fill-opacity=".18"/>'
+            f'<path d="M10 -12L-10 12"/>'
+            f'<path d="M-14 15H8" stroke="{c}" stroke-dasharray="22" '
+            f'style="animation:write 3s ease-in-out infinite"/>'
+        )
+    if kind == "network":
+        pts = [polar(0, 0, 14, -90 + k * 72) for k in range(5)]
+        lines = "".join(f'<line x1="0" y1="0" x2="{f(x)}" y2="{f(y)}" opacity=".7"/>' for x, y in pts)
+        ring = "M" + "L".join(f"{f(x)} {f(y)}" for x, y in pts) + "Z"
+        nodes = "".join(
+            f'<circle cx="{f(x)}" cy="{f(y)}" r="3" fill="{C["panel"]}" '
+            f'style="animation:pulse 2.5s ease-in-out {k * 0.5:.1f}s infinite"/>'
+            for k, (x, y) in enumerate(pts)
+        )
+        return (
+            f'{lines}<path d="{ring}" opacity=".35"/>{nodes}'
+            f'<circle r="4.5" fill="{c}" stroke="none"/>'
+        )
+    if kind == "book":
+        return (
+            f'<path d="M0 -8C-5 -12 -12 -12 -16 -10V12C-12 10 -5 10 0 14C5 10 12 10 16 12V-10'
+            f'C12 -12 5 -12 0 -8Z" fill="{g}" fill-opacity=".15"/>'
+            f'<path d="M0 -8V14"/>'
+            f'<path d="M-12 -4C-9 -5 -6 -5 -4 -4M-12 1C-9 0 -6 0 -4 1M4 -4C6 -5 9 -5 12 -4" '
+            f'stroke-width="1" opacity=".7"/>'
+        )
+    raise ValueError(kind)
+
+
+def credential(role: str, title: str, kind: str, idx: int) -> str:
+    W, H = 176, 156
+    bg_defs, bg = backdrop(W, H, cx="50%", cy="30%")
+    css = """
+@keyframes write{0%{stroke-dashoffset:22}60%,100%{stroke-dashoffset:0}}
+.open{animation:pulse 2.4s ease-in-out infinite}
+"""
+    cx, cy = W / 2, 54
+    direction = "spin" if idx % 2 == 0 else "spinr"
+    body = (
+        bg + starfield(W, H, 14, seed=200 + idx) + corners(W, H, inset=8, size=11)
+        + f'<g style="transform-origin:{f(cx)}px {cy}px;animation:{direction} {26 + idx * 4}s linear infinite">'
+        f'<circle cx="{f(cx)}" cy="{cy}" r="34" fill="none" stroke="{C["cyan"]}" stroke-width=".9" '
+        f'stroke-dasharray="2 5" opacity=".6"/></g>'
+        f'<circle cx="{f(cx)}" cy="{cy}" r="28" fill="{C["panel"]}" stroke="{C["gold_d"]}" stroke-width="1.2"/>'
+        f'<g transform="translate({f(cx)} {cy})" fill="none" stroke="{C["gold"]}" stroke-width="1.6" '
+        f'stroke-linecap="round" stroke-linejoin="round">{cred_icon(kind)}</g>'
+        f'<text x="{f(cx)}" y="{cy + 54}" text-anchor="middle" class="mono" font-size="9" '
+        f'letter-spacing="1.5" fill="{C["cyan"]}">{esc(role)}</text>'
+        f'<text x="{f(cx)}" y="{cy + 75}" text-anchor="middle" class="serif" font-size="15" '
+        f'font-weight="600" fill="{C["gold"]}">{esc(title)}</text>'
+        f'<text class="mono open" x="{f(cx)}" y="{H - 12}" text-anchor="middle" font-size="8.5" '
+        f'letter-spacing="2" fill="{C["hud"]}" style="animation-delay:{idx * 0.4:.1f}s">OPEN ›</text>'
+    )
+    return svg(W, H, f"{role}: {title}", body, css, bg_defs)
+
+
+# ═══════════════════════════════════════════════════════════════ OFF-DUTY ══
+
+def icon(kind: str) -> str:
+    """Line-art icons drawn around (0, 0), roughly 40 px across."""
+    g, v = C["gold"], C["void"]
+    if kind == "sail":
+        return (
+            f'<g style="animation:rock 4s ease-in-out infinite;transform-origin:0px 12px">'
+            f'<path d="M-16 6H16L11 13H-11Z" fill="{g}" fill-opacity=".25"/>'
+            f'<line x1="0" y1="6" x2="0" y2="-18"/>'
+            f'<path d="M2 -16V3H15Z" fill="{g}" fill-opacity=".85"/>'
+            f'<path d="M-2 -11V3H-12Z"/></g>'
+            f'<path d="M-18 17q4.5 -3 9 0t9 0t9 0t9 0" stroke="{C["cyan"]}" stroke-width="1.2" opacity=".8"/>'
+        )
+    if kind == "plane":
+        return (
+            f'<g style="animation:float 3.2s ease-in-out infinite">'
+            f'<path d="M0 -18C2 -18 3 -15 3 -12V-3L17 5V8L3 4V11L8 15V17L0 15L-8 17V15L-3 11V4'
+            f'L-17 8V5L-3 -3V-12C-3 -15 -2 -18 0 -18Z" fill="{g}" fill-opacity=".2"/></g>'
+        )
+    if kind == "gamepad":
+        return (
+            f'<path d="M-13 -7H13C18 -7 21 -1 20 6C19 12 15 14 12 10L8 5H-8L-12 10'
+            f'C-15 14 -19 12 -20 6C-21 -1 -18 -7 -13 -7Z" fill="{g}" fill-opacity=".15"/>'
+            f'<path d="M-11 -4V4M-15 0H-7" stroke-width="2"/>'
+            f'<circle cx="9" cy="-2" r="1.9" fill="{C["cyan"]}" stroke="none" class="blink"/>'
+            f'<circle cx="13" cy="2" r="1.9" fill="{g}" stroke="none"/>'
+        )
+    if kind == "robot":
+        return (
+            f'<line x1="0" y1="-10" x2="0" y2="-16"/>'
+            f'<circle cx="0" cy="-17.5" r="2" fill="{C["cyan"]}" stroke="none" '
+            f'style="animation:pulse 1.6s ease-in-out infinite"/>'
+            f'<rect x="-13" y="-10" width="26" height="21" rx="5" fill="{g}" fill-opacity=".15"/>'
+            f'<rect x="-17" y="-4" width="4" height="8" rx="1.5"/><rect x="13" y="-4" width="4" height="8" rx="1.5"/>'
+            f'<g fill="{C["cyan"]}" stroke="none" style="animation:blinkeye 4s steps(1) infinite">'
+            f'<circle cx="-5" cy="-1" r="2.6"/><circle cx="5" cy="-1" r="2.6"/></g>'
+            f'<path d="M-5 5.5H5" stroke-width="1.4"/>'
+        )
+    if kind == "plate":
+        return (
+            f'<circle r="13" fill="{g}" fill-opacity=".12"/><circle r="8.5" opacity=".6"/>'
+            f'<path d="M-21 -12V-3M-23.5 -12V-5C-23.5 -2 -18.5 -2 -18.5 -5V-12M-21 -3V13"/>'
+            f'<path d="M21 13V-12C24.5 -9 24.5 -1 21 1"/>'
+        )
+    if kind == "wine":
+        return (
+            f'<path d="M-8.2 -9H8.2C7.4 -3 4.4 -.6 0 -.6C-4.4 -.6 -7.4 -3 -8.2 -9Z" fill="#B0283F" '
+            f'stroke="none" style="animation:slosh 3.4s ease-in-out infinite;transform-origin:0px -4px"/>'
+            f'<path d="M-9 -17H9C9 -5 5 0 0 0C-5 0 -9 -5 -9 -17Z"/>'
+            f'<line x1="0" y1="0" x2="0" y2="13"/><line x1="-7" y1="13.5" x2="7" y2="13.5"/>'
+        )
+    raise ValueError(kind)
+
+
+def off_duty() -> str:
+    W, H = 900, 210
+    bg_defs, bg = backdrop(W, H, cx="20%", cy="50%")
+    defs = bg_defs + glow_filter("glow", 1.6) + (
+        f'<linearGradient id="eq" x1="0" y1="1" x2="0" y2="0" gradientUnits="objectBoundingBox">'
+        f'<stop offset="0" stop-color="{C["violet"]}"/><stop offset="1" stop-color="{C["cyan"]}"/>'
+        f"</linearGradient>"
+    )
+    css = """
+@keyframes rock{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+@keyframes slosh{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+@keyframes blinkeye{0%,92%{opacity:1}93%,97%{opacity:0}98%,100%{opacity:1}}
+@keyframes eq{0%,100%{transform:scaleY(.15)}50%{transform:scaleY(1)}}
+.eq{transform-box:fill-box;transform-origin:bottom;animation:eq 1s ease-in-out infinite}
+@keyframes lbl{0%,100%{opacity:.7}50%{opacity:1}}
+.lbl{animation:lbl 5s ease-in-out infinite}
+"""
+    b = [bg, starfield(W, H, 45, seed=77), corners(W, H)]
+    b.append(
+        f'<text x="34" y="34" class="mono" font-size="11" letter-spacing="1.5" fill="{C["cyan"]}">'
+        f"&gt; crew.dossier --off-duty</text>"
+        f'<text x="{W - 34}" y="34" text-anchor="end" class="mono" font-size="9.5" letter-spacing="1.5" '
+        f'fill="{C["hud"]}">STATUS: SHORE LEAVE · COMMS OPEN</text>'
+    )
+
+    # badges
+    cy = 104
+    for i, (label, kind) in enumerate(OFF_DUTY):
+        x = 82 + i * 90
+        direction = "spin" if i % 2 == 0 else "spinr"
+        b.append(
+            f'<g style="transform-origin:{x}px {cy}px;animation:{direction} {24 + i * 3}s linear infinite">'
+            f'<circle cx="{x}" cy="{cy}" r="36" fill="none" stroke="{C["cyan"]}" stroke-width=".9" '
+            f'stroke-dasharray="2 5" opacity=".6"/></g>'
+            f'<circle cx="{x}" cy="{cy}" r="30" fill="{C["panel"]}" stroke="{C["gold_d"]}" stroke-width="1.2"/>'
+            f'<g transform="translate({x} {cy})" fill="none" stroke="{C["gold"]}" stroke-width="1.6" '
+            f'stroke-linecap="round" stroke-linejoin="round">{icon(kind)}</g>'
+            f'<text class="mono lbl" x="{x}" y="{cy + 56}" text-anchor="middle" font-size="9.5" '
+            f'letter-spacing="1.8" fill="{C["ink"]}" style="animation-delay:{i * 0.6:.1f}s">{label}</text>'
+        )
+
+    # audio channel
+    px, py, pw, ph = 600, 52, 268, 128
+    b.append(
+        f'<rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="10" fill="{C["panel"]}" '
+        f'fill-opacity=".75" stroke="{C["faint"]}"/>'
+        f'<text x="{px + 16}" y="{py + 22}" class="mono" font-size="10" letter-spacing="2.5" '
+        f'fill="{C["cyan"]}">AUDIO CHANNEL</text>'
+        f'<circle cx="{px + pw - 54}" cy="{py + 18.5}" r="3" fill="#FF5A6E" class="blink"/>'
+        f'<text x="{px + pw - 16}" y="{py + 22}" text-anchor="end" class="mono" font-size="9" '
+        f'letter-spacing="1.5" fill="{C["dim"]}">LIVE</text>'
+    )
+    rnd = random.Random(5)
+    n_bars, bw, gap = 24, 6, 4
+    bx0 = px + (pw - (n_bars * bw + (n_bars - 1) * gap)) / 2
+    base, bh = py + 92, 52
+    for k in range(n_bars):
+        dur = rnd.uniform(0.55, 1.4)
+        delay = rnd.uniform(0, 1.4)
+        b.append(
+            f'<rect class="eq" x="{f(bx0 + k * (bw + gap))}" y="{base - bh}" width="{bw}" height="{bh}" '
+            f'rx="1.5" fill="url(#eq)" style="animation-duration:{f(dur)}s;animation-delay:-{f(delay)}s"/>'
+        )
+    b.append(
+        f'<line x1="{px + 16}" y1="{base + 2}" x2="{px + pw - 16}" y2="{base + 2}" stroke="{C["faint"]}"/>'
+        f'<text x="{px + pw / 2}" y="{py + ph - 14}" text-anchor="middle" class="mono" font-size="10" '
+        f'fill="{C["ink"]}">{esc(GENRES)}</text>'
+    )
+
+    b.append(
+        f'<text x="34" y="{H - 16}" class="mono" font-size="9.5" letter-spacing="1" fill="{C["hud"]}">'
+        f"AI CREW ON WATCH ▸ {esc(AI_CREW)}</text>"
+    )
+    return svg(W, H, "Off-duty: sailor, traveler, gamer, geek, foodie, red wine lover; "
+                     "music: metal, rock, electro-swing, pop", "\n".join(b), css, defs)
+
+
 # ═══════════════════════════════════════════════════════ DIVIDER / FOOTER ══
 
 def divider() -> str:
@@ -939,10 +1193,16 @@ def main() -> None:
         ("arcana.svg", arcana),
         ("elements.svg", elements),
         ("transmissions.svg", transmissions),
+        ("off-duty.svg", off_duty),
+        ("dossier.svg", dossier_intro),
         ("divider.svg", divider),
         ("footer.svg", footer),
     ]
     jobs += [(f"missions/{m[0]}.svg", lambda m=m: mission_card(*m)) for m in MISSIONS]
+    jobs += [
+        (f"dossier/{slug}.svg", lambda r=role, t=title, k=kind, i=i: credential(r, t, k, i))
+        for i, (slug, role, title, kind) in enumerate(CREDENTIALS)
+    ]
     jobs += [
         (f"comms/{slug}.svg", lambda lab=lab, col=col, i=i: comm_button(lab, col, i))
         for i, (slug, lab, col) in enumerate(COMMS)
