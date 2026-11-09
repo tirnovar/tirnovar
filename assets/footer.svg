@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="120" viewBox="0 0 900 120" role="img" aria-label="End of transmission. Per data ad astra.">
+<title>End of transmission. Per data ad astra.</title>
+<defs><style>
+.serif{font-family:Cinzel, 'Cormorant Garamond', 'Trajan Pro', Georgia, 'Times New Roman', serif}
+.mono{font-family:'JetBrains Mono', 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
+@keyframes twinkle{0%,100%{opacity:.12}50%{opacity:.95}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes spinr{to{transform:rotate(-360deg)}}
+@keyframes fadeup{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.tw{animation:twinkle 5s ease-in-out infinite}
+.blink{animation:blink 1.1s steps(1) infinite}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style><radialGradient id="bg" cx="50%" cy="100%" r="90%"><stop offset="0" stop-color="#1B1440"/><stop offset=".45" stop-color="#0E0B24"/><stop offset="1" stop-color="#07061A"/></radialGradient></defs>
+<rect x=".5" y=".5" width="899" height="119" rx="16" fill="url(#bg)" stroke="#3B3568"/><circle cx="574.37" cy="6.8" r="0.8" fill="#ECE6FF" class="tw" style="animation-delay:-5.16s;animation-duration:6.38s"/>
+<circle cx="799.82" cy="13.74" r="1.0" fill="#ECE6FF" class="tw" style="animation-delay:-1.53s;animation-duration:5.53s"/>
+<circle cx="27.67" cy="26.27" r="1.6" fill="#5FE3D0" opacity="0.2"/>
+<circle cx="529.62" cy="94.66" r="0.5" fill="#ECE6FF" opacity="0.25"/>
+<circle cx="142.69" cy="111.21" r="0.8" fill="#ECE6FF" class="tw" style="animation-delay:-0.68s;animation-duration:7.24s"/>
+<circle cx="542.52" cy="94.4" r="1.6" fill="#E8C66A" opacity="0.49"/>
+<circle cx="341.65" cy="65.83" r="1.6" fill="#9B7BFF" opacity="0.26"/>
+<circle cx="175.52" cy="11.79" r="1.6" fill="#ECE6FF" opacity="0.49"/>
+<circle cx="766.94" cy="101.05" r="1.0" fill="#ECE6FF" opacity="0.44"/>
+<circle cx="149.09" cy="43.79" r="1.6" fill="#ECE6FF" opacity="0.38"/>
+<circle cx="67.69" cy="75.12" r="1.2" fill="#5FE3D0" class="tw" style="animation-delay:-3.24s;animation-duration:4.35s"/>
+<circle cx="829.45" cy="81.07" r="0.6" fill="#5FE3D0" class="tw" style="animation-delay:-5.38s;animation-duration:3.28s"/>
+<circle cx="737.05" cy="94.17" r="1.0" fill="#ECE6FF" class="tw" style="animation-delay:-6.39s;animation-duration:5.84s"/>
+<circle cx="644.38" cy="27.81" r="1.0" fill="#E8C66A" opacity="0.36"/>
+<circle cx="131.44" cy="19.64" r="1.6" fill="#9B7BFF" opacity="0.4"/>
+<circle cx="386.16" cy="69.36" r="0.8" fill="#ECE6FF" opacity="0.17"/>
+<circle cx="444.22" cy="88.65" r="0.5" fill="#ECE6FF" opacity="0.42"/>
+<circle cx="380.57" cy="11.12" r="1.0" fill="#9B7BFF" opacity="0.32"/>
+<circle cx="870.2" cy="100.41" r="0.5" fill="#5FE3D0" opacity="0.38"/>
+<circle cx="482.98" cy="33.88" r="1.6" fill="#ECE6FF" class="tw" style="animation-delay:-3.04s;animation-duration:5.27s"/>
+<circle cx="854.8" cy="102.1" r="0.8" fill="#9B7BFF" opacity="0.31"/>
+<circle cx="98.92" cy="74.03" r="1.6" fill="#9B7BFF" opacity="0.18"/>
+<circle cx="684.16" cy="64.41" r="1.2" fill="#ECE6FF" opacity="0.31"/>
+<circle cx="103.79" cy="44.65" r="0.8" fill="#ECE6FF" class="tw" style="animation-delay:-6.15s;animation-duration:7.73s"/>
+<circle cx="80.4" cy="58.43" r="0.5" fill="#9B7BFF" opacity="0.17"/>
+<circle cx="427.95" cy="65.58" r="0.8" fill="#9B7BFF" opacity="0.28"/>
+<circle cx="192.92" cy="64.4" r="1.6" fill="#5FE3D0" class="tw" style="animation-delay:-2.18s;animation-duration:7.98s"/>
+<circle cx="583.69" cy="53.07" r="1.2" fill="#E8C66A" class="tw" style="animation-delay:-1.57s;animation-duration:4.69s"/>
+<circle cx="528.77" cy="29.77" r="0.6" fill="#ECE6FF" class="tw" style="animation-delay:-4.42s;animation-duration:4.14s"/>
+<circle cx="811.63" cy="100.28" r="0.5" fill="#9B7BFF" class="tw" style="animation-delay:-4.68s;animation-duration:4.07s"/>
+<circle cx="122.02" cy="108.78" r="1.2" fill="#9B7BFF" opacity="0.42"/>
+<circle cx="724.29" cy="25.33" r="0.5" fill="#5FE3D0" class="tw" style="animation-delay:-2.97s;animation-duration:5.34s"/>
+<circle cx="654.34" cy="79.42" r="1.6" fill="#ECE6FF" class="tw" style="animation-delay:-5.1s;animation-duration:7s"/>
+<circle cx="101.47" cy="25.46" r="1.2" fill="#E8C66A" class="tw" style="animation-delay:-1.28s;animation-duration:5.31s"/>
+<circle cx="784.04" cy="12.44" r="1.2" fill="#ECE6FF" class="tw" style="animation-delay:-6.99s;animation-duration:7.18s"/>
+<circle cx="868.34" cy="107.75" r="0.6" fill="#ECE6FF" class="tw" style="animation-delay:-3.37s;animation-duration:7.32s"/>
+<circle cx="808.98" cy="22.44" r="0.5" fill="#E8C66A" class="tw" style="animation-delay:-5.49s;animation-duration:5.28s"/>
+<circle cx="381.32" cy="111.22" r="1.2" fill="#5FE3D0" opacity="0.18"/>
+<circle cx="268.66" cy="112.5" r="1.2" fill="#5FE3D0" opacity="0.4"/>
+<circle cx="54.99" cy="69.43" r="1.2" fill="#9B7BFF" class="tw" style="animation-delay:-6.73s;animation-duration:3.4s"/>
+<circle cx="169.76" cy="70.64" r="1.6" fill="#ECE6FF" class="tw" style="animation-delay:-6.59s;animation-duration:5.85s"/>
+<circle cx="520.4" cy="8.45" r="0.5" fill="#E8C66A" opacity="0.33"/>
+<circle cx="286.2" cy="33.21" r="1.6" fill="#5FE3D0" class="tw" style="animation-delay:-1.86s;animation-duration:3.65s"/>
+<circle cx="579.79" cy="55.21" r="0.5" fill="#ECE6FF" opacity="0.5"/>
+<circle cx="892.52" cy="12.21" r="0.6" fill="#9B7BFF" class="tw" style="animation-delay:-6.53s;animation-duration:7.4s"/>
+<circle cx="788.31" cy="45.39" r="0.6" fill="#E8C66A" opacity="0.39"/>
+<circle cx="549.62" cy="114.57" r="1.6" fill="#9B7BFF" class="tw" style="animation-delay:-5.72s;animation-duration:4.5s"/>
+<circle cx="595.74" cy="109.16" r="0.6" fill="#ECE6FF" class="tw" style="animation-delay:-0.75s;animation-duration:5.77s"/>
+<circle cx="246.93" cy="71.74" r="1.6" fill="#ECE6FF" class="tw" style="animation-delay:-4.44s;animation-duration:4.32s"/>
+<circle cx="439.77" cy="105.4" r="0.5" fill="#ECE6FF" opacity="0.44"/>
+<circle cx="43.33" cy="41.36" r="0.6" fill="#5FE3D0" opacity="0.18"/>
+<circle cx="398.12" cy="83.03" r="1.2" fill="#ECE6FF" class="tw" style="animation-delay:-6.62s;animation-duration:6.46s"/>
+<circle cx="136.96" cy="8.04" r="0.8" fill="#9B7BFF" opacity="0.28"/>
+<circle cx="41.31" cy="44.84" r="0.5" fill="#ECE6FF" class="tw" style="animation-delay:-1.75s;animation-duration:3.51s"/>
+<circle cx="699.86" cy="103.02" r="1.0" fill="#9B7BFF" opacity="0.47"/>
+<circle cx="215.17" cy="22.2" r="0.6" fill="#E8C66A" class="tw" style="animation-delay:-5.16s;animation-duration:4.66s"/>
+<circle cx="834.29" cy="93.85" r="1.6" fill="#ECE6FF" class="tw" style="animation-delay:-5.51s;animation-duration:3.54s"/>
+<circle cx="781.97" cy="100.16" r="0.6" fill="#ECE6FF" opacity="0.29"/>
+<circle cx="276.23" cy="93.08" r="0.6" fill="#ECE6FF" class="tw" style="animation-delay:-1.35s;animation-duration:4.64s"/>
+<circle cx="775" cy="112.29" r="0.8" fill="#ECE6FF" opacity="0.27"/><path d="M10 26V10H26" fill="none" stroke="#5FE3D0" stroke-width="1.4" opacity=".55"/><path d="M874 10H890V26" fill="none" stroke="#5FE3D0" stroke-width="1.4" opacity=".55"/><path d="M10 94V110H26" fill="none" stroke="#5FE3D0" stroke-width="1.4" opacity=".55"/><path d="M874 110H890V94" fill="none" stroke="#5FE3D0" stroke-width="1.4" opacity=".55"/><text x="450.0" y="44" text-anchor="middle" class="mono" font-size="11" letter-spacing="3" fill="#8E88B8">END OF TRANSMISSION</text><rect class="blink" x="548.0" y="34" width="7" height="12" fill="#5FE3D0"/><text x="450.0" y="78" text-anchor="middle" class="serif" font-size="20" font-style="italic" letter-spacing="1" fill="#E8C66A">Per data ad astra.</text><text x="450.0" y="102" text-anchor="middle" class="mono" font-size="9" letter-spacing="1" fill="#5E579A">forged by scripts/forge.py · zero JavaScript was harmed</text>
+</svg>
