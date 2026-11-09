@@ -88,17 +88,24 @@ ELEMENT_CLASSES = {
     "engine": ("cyan", "ENGINES & FAMILIARS"),
 }
 
-# Talks per year, counted from sessionize.com/stepan-resl
-TRANSMISSIONS = {2019: 1, 2020: 5, 2021: 6, 2022: 3, 2023: 8, 2024: 10, 2025: 7, 2026: 8}
+# Events per year. Lower bound: Sessionize (sessionize.com/stepan-resl) plus
+# events from the speaker log that never went through Sessionize. Not every
+# talk is logged anywhere, hence the "+" in the headline.
+#   2026 off-Sessionize: SQL Server Bootcamp (Brno), Czech Fabric UG #3,
+#   AI Horizon Conference (Prague), Difinity Conference (Melbourne)
+TRANSMISSIONS = {2019: 1, 2020: 5, 2021: 6, 2022: 3, 2023: 8, 2024: 10, 2025: 7, 2026: 12}
+TRANSMISSIONS_OPEN_ENDED = True  # renders "N+" and the off-record note
+
+# Newest first: (event, city, upcoming)
 LATEST_SIGNALS = [
-    ("FabFest 2026", "Birmingham"),
-    ("dataMinds Connect 2026", "Mechelen"),
-    ("Data Saturday Holland", "Utrecht"),
-    ("Power BI Next Step 2026", "Odense"),
-    ("Data Point Prague 2026", "Prague"),
-    ("DataGrillen 2026", "Lingen"),
-    ("SQLDay 2026", "Wrocław"),
-    ("SQLBits 2025", "London"),
+    ("Difinity 2026", "Melbourne", True),
+    ("FabFest 2026", "Birmingham", False),
+    ("dataMinds Connect 2026", "Mechelen", False),
+    ("Data Saturday Holland", "Utrecht", False),
+    ("AI Horizon 2026", "Prague", False),
+    ("Czech Fabric UG #3", "Prague", False),
+    ("Power BI Next Step 2026", "Odense", False),
+    ("SQL Server Bootcamp 2026", "Brno", False),
 ]
 
 # (file slug, mission no, tag, title, description lines, footer)
@@ -770,9 +777,10 @@ def transmissions() -> str:
     first = min(TRANSMISSIONS)
     b.append(
         f'<text x="34" y="36" class="mono" font-size="11" letter-spacing="2" fill="{C["cyan"]}">'
-        f"TRANSMISSION LOG ▸ {total} BROADCASTS SINCE {first}</text>"
+        f"TRANSMISSION LOG ▸ {total}{'+' if TRANSMISSIONS_OPEN_ENDED else ''} BROADCASTS SINCE {first}</text>"
         f'<text x="34" y="54" class="mono" font-size="9.5" fill="{C["hud"]}">'
-        f"source: sessionize.com/stepan-resl · conferences, user groups, podcasts</text>"
+        f"sources: sessionize + speaker log"
+        f"{' · plenty more went out off the record' if TRANSMISSIONS_OPEN_ENDED else ''}</text>"
     )
 
     years = sorted(TRANSMISSIONS)
@@ -833,15 +841,23 @@ def transmissions() -> str:
         f'fill="{C["cyan"]}">LATEST SIGNALS</text>'
         f'<line x1="{px + 18}" y1="{py + 36}" x2="{px + pw - 18}" y2="{py + 36}" stroke="{C["faint"]}"/>'
     )
-    for i, (event, city) in enumerate(LATEST_SIGNALS):
+    for i, (event, city, upcoming) in enumerate(LATEST_SIGNALS):
         y = py + 60 + i * 25
         b.append(
-            f'<circle cx="{px + 22}" cy="{y - 4}" r="2.6" fill="{C["gold"] if i else C["cyan"]}" '
+            f'<circle cx="{px + 22}" cy="{y - 4}" r="2.6" fill="{C["cyan"] if upcoming else C["gold"]}" '
             f'style="animation:pulse 2.6s ease-in-out {i * 0.3:.1f}s infinite"/>'
             f'<text x="{px + 34}" y="{y}" class="mono" font-size="10.5" fill="{C["ink"]}">'
             f'{esc(event)}<tspan fill="{C["dim"]}"> · {esc(city)}</tspan></text>'
         )
-    return svg(W, H, f"Transmission log: {total} talks since {first}", "\n".join(b), css, defs)
+        if upcoming:
+            b.append(
+                f'<rect x="{px + pw - 66}" y="{y - 12}" width="50" height="15" rx="7.5" fill="none" '
+                f'stroke="{C["cyan"]}" stroke-width=".9" class="blink" style="animation-duration:2.2s"/>'
+                f'<text x="{px + pw - 41}" y="{y - 1.5}" text-anchor="middle" class="mono" font-size="8" '
+                f'letter-spacing="1.2" fill="{C["cyan"]}">SOON</text>'
+            )
+    plus = "+" if TRANSMISSIONS_OPEN_ENDED else ""
+    return svg(W, H, f"Transmission log: {total}{plus} talks since {first}", "\n".join(b), css, defs)
 
 
 # ═══════════════════════════════════════════════════════════════ MISSIONS ══

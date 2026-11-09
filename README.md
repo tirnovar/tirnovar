@@ -65,7 +65,7 @@
 ### ✦ V · Transmissions
 
 <p align="center">
-  <a href="https://sessionize.com/stepan-resl"><img src="assets/transmissions.svg" width="100%" alt="Speaking timeline from 2019 to 2026 drawn as a constellation, 48 talks in total, with the latest events listed."></a>
+  <a href="https://sessionize.com/stepan-resl"><img src="assets/transmissions.svg" width="100%" alt="Speaking timeline from 2019 to 2026 drawn as a constellation, 52+ events in total (Sessionize plus speaker log, more off the record), with the latest events listed."></a>
 </p>
 
 <details>
